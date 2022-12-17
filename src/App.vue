@@ -12,17 +12,23 @@
   </div>
 </template>
 
-<script>
+<script setup>
 import Navbar from "./components/Navbar.vue";
 import CountriesList from "./pages/CountriesList.vue";
 import CountryDetails from "./pages/CountryDetails.vue";
-export default {
+
+import {useCountryStore} from './stores/country.js'
+const main = useCountryStore()
+
+/* export default {
   components: {
     Navbar,
     CountriesList,
     CountryDetails,
   },
 };
+*/
+
 </script>
 
 <style></style>
